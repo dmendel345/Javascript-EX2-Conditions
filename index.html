@@ -1,27 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="lib/script.js"></script>
     <link rel="stylesheet" href="lib/style.css">
     <title>Document</title>
 </head>
-<body>
+
+<body class="container">
 
     <h1>Ex2 Java Script</h1>
 
-    <form class="form-inline">
-        <div class="form-group">
+    <form class="form row">
+        <div class="form-group col-xs-3">
             <label for="Excercise #1"></label>
-            <input type="number" name="" id="number1" class="form-control" 
-            placeholder="" aria-describedby="helpId">
+            <input type="number" name="" id="number1" class="form-control" placeholder="" aria-describedby="helpId">
             <small id="helpId" class="text-muted">Enter any number</small>
-            <button type="button" onclick="checkNumber()">negative, positive or zero</button>
-            <button type="button" onclick="checkNumberDivided()">divisible by 5 and 11 or not</button>
+            <div class="buttons">
+                <button type="button" onclick="checkNumber()">negative, positive or zero</button>
+            </div>
+            <div class="buttons">
+                <button type="button" onclick="checkNumberDivided()">divisible by 5 and 11 or not</button>
+            </div>
+            <div class="buttons">
+                <button type="button" onclick="checkNumberOddOrEven()">Odd or Even</button>
+            </div>
         </div>
     </form>
-    
+
+    <form class="form row">
+        <div class="row-form-group col-xs-3">
+            <label for=""></label>
+            <input type="year" class="form-control" name="" id="number2" aria-describedby="helpId" placeholder="">
+            <small id="helpId" class="form-text text-muted">Year is leap or not</small>
+            <div class="buttons">
+                <button type="button" onclick="checkYear()">Check the year</button>
+            </div>
+        </div>
+    </form>
+
+    <form class="form row">
+            <div class="row-form-group col-xs-3">
+                <label for=""></label>
+                <input type="text" class="form-control" name="" id="param1" aria-describedby="helpId" placeholder="">
+                <small id="helpId" class="form-text text-muted">Check character type</small>
+                <div class="buttons">
+                    <button type="button" onclick="checkCharType()">Check </button>
+                </div>
+            </div>
+        </form>
+
+        <form class="form row">
+                <div class="row-form-group col-xs-3">
+                    <label for=""></label>
+                    <input type="text" class="form-control" name="" id="param2" maxlength="1" aria-describedby="helpId" placeholder="">
+                    <small id="helpId" class="form-text text-muted">Check character vowel or consonant</small>
+                    <div class="buttons">
+                        <button type="button" onclick="checkChar()">Check char</button>
+                    </div>
+                </div>
+            </form>
+
+            <form class="form row">
+                    <div class="row-form-group col-xs-3">
+                        <label for=""></label>
+                        <input type="number" class="form-control" name="" id="money1" maxlength="" aria-describedby="helpId" placeholder="">
+                        <small id="helpId" class="form-text text-muted">Money notes</small>
+                        <div class="buttons">
+                            <button type="button" onclick="checkNumberOfNotes()">number of notes</button>
+                        </div>
+                    </div>
+                </form>
+
 </body>
 </html>
